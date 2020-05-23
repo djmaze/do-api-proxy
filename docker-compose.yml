@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    image: mazzolino/do-api-proxy
+    env_file: .env
+    ports:
+      - 1338:1338/tcp
